@@ -94,7 +94,7 @@
                 return descriptor.ImplementationFactory( services );
             }
 
-            return ActivatorUtilities.GetServiceOrCreateInstance( services, descriptor.ImplementationType );
+            return ActivatorUtilities.GetServiceOrCreateInstance( services, descriptor.ImplementationType! );
         }
 
         static ServiceDescriptor WithUrlHelperFactoryDecorator( IServiceCollection services )
